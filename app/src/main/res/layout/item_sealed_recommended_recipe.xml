@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_sealedRecommendedRecipe_recommendationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="이번주 꿀조합 레시피!"
+        android:textColor="@color/colorGray"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView_sealedRecommendedRecipe_lottie1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/textView_sealedRecommendedRecipe_recommendationLabel"
+        app:layout_constraintStart_toEndOf="@id/textView_sealedRecommendedRecipe_recommendationLabel"
+        app:layout_constraintTop_toTopOf="@id/textView_sealedRecommendedRecipe_recommendationLabel"
+        app:layout_goneMarginStart="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="recipe2.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_sealedRecommendedRecipe_recommendedRecipeContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_sealedRecommendedRecipe_recommendationLabel"
+        app:layout_constraintVertical_bias="0.2">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager2_sealedRecommendedRecipe_recommendedRecipes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal" />
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/dotsIndicator_sealedRecommendedRecipe_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:dotsColor="#F1F1F1"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="10dp"
+            app:dotsSpacing="3dp"
+            app:dotsWidthFactor="2.5"
+            app:progressMode="true"
+            app:selectedDotColor="#FFC107" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_sealedRecommendedRecipe_divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#F0F2F3"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout_sealedRecommendedRecipe_recommendedRecipeContainer" />
+
+    <TextView
+        android:id="@+id/textView_sealedRecommendedRecipe_basicLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="당신에게 맞는 꿀맛 레시피는?"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_sealedRecommendedRecipe_divider" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView_sealedRecommendedRecipe_lottie2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/textView_sealedRecommendedRecipe_basicLabel"
+        app:layout_constraintStart_toEndOf="@id/textView_sealedRecommendedRecipe_basicLabel"
+        app:layout_constraintTop_toTopOf="@id/textView_sealedRecommendedRecipe_basicLabel"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="recipe.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

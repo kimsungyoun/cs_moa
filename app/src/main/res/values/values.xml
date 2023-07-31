@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="kakao_app_key">65e36577bc172f14cbcf4d37397acc43</string>
+
     <!-- 더보기 리스트 -->
     <string-array name="more_item_list">
         <item>divider</item>
@@ -33,7 +35,7 @@
     <string-array name="cs_brand_list">
         <item>cu</item>
         <item>gs25</item>
-        <item>seven-eleven</item>
+        <item>seven</item>
         <item>ministop</item>
         <item>emart24</item>
     </string-array>
@@ -44,6 +46,22 @@
         <item>@drawable/img_cs_seveneleven</item>
         <item>@drawable/img_cs_ministop</item>
         <item>@drawable/img_cs_emart24</item>
+    </array>
+
+    <array name="cs_brand_logo_mini_list">
+        <item>@drawable/img_cs_mini_cu</item>
+        <item>@drawable/img_cs_mini_gs25</item>
+        <item>@drawable/img_cs_mini_seven</item>
+        <item>@drawable/img_cs_mini_ministop</item>
+        <item>@drawable/img_cs_mini_emart24</item>
+    </array>
+
+    <array name="cs_brand_logo_text_list">
+        <item>@drawable/img_cs_text_cu</item>
+        <item>@drawable/img_cs_text_gs25</item>
+        <item>@drawable/img_cs_text_seven</item>
+        <item>@drawable/img_cs_text_ministop</item>
+        <item>@drawable/img_cs_text_emart24</item>
     </array>
 
     <string-array name="cs_brand_color_list">
@@ -70,7 +88,7 @@
 
     <string-array name="item_category_list">
         <item>음료</item>
-        <item>과자</item>
+        <item>과자류</item>
         <item>식품</item>
         <item>아이스크림</item>
     </string-array>
@@ -81,6 +99,22 @@
         <item>@drawable/ic_item_food</item>
         <item>@drawable/ic_item_icecream</item>
     </array>
+
+    <string name="jwt_secret_key">UwKYibQQgkW7g-*k.ap9kje-wxBHb9wdXoBT4vnt4P3sJWt-Nu</string>
+
+
+    <string-array name="color_top10">
+        <item>#A8E6CE</item>
+        <item>#DCEDC2</item>
+        <item>#FFD3B5</item>
+        <item>#FFAAA6</item>
+        <item>#E1F5C4</item>
+        <item>#EEE3E7</item>
+        <item>#FF8C94</item>
+        <item>#45ADA8</item>
+        <item>#E5FCC2</item>
+        <item>#F9CDAD</item>
+    </string-array>
 
 
 

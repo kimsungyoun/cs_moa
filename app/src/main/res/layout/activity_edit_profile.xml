@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.more.EditProfileActivity">
+    tools:context=".home.more.EditProfileActivity">
 
     <include
         android:id="@+id/include_common_toolbar"
@@ -28,7 +28,7 @@
             android:id="@+id/imageView_editProfile_profileImg"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/img_all_myface" />
+            tools:src="@drawable/img_all_myface" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="wrap_content"
